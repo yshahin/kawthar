@@ -1,4 +1,4 @@
-defmodule Kausar do
+defmodule Kawthar do
   use HTTPoison.Base
 
   @expected_fields ~w(status url text statusInfo)
@@ -7,8 +7,8 @@ defmodule Kausar do
   def apikey, do: System.get_env("ALCHEMYAPI_KEY")
 
   def request(url, params) do
-    querystring = Kausar.to_querystring(params)
-    case Kausar.get(url <> "?" <> querystring) do
+    querystring = Kawthar.to_querystring(params)
+    case Kawthar.get(url <> "?" <> querystring) do
       {:ok, response} -> {:ok, response.body}
       error -> error
     end
