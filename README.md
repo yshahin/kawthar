@@ -1,4 +1,4 @@
-Kausar
+Kawthar
 ======
 
 an AlchemyAPI wrapper for Elixir
